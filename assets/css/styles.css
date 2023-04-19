@@ -1,0 +1,20 @@
+@import url("index.css");
+
+
+:root{
+    /*Tamanho fontes*/
+    /*Mobile*/
+    --mobile-p: 20px;
+    --mobile-h: 25px;
+
+    /*cores*/
+    --botao-principal:linear-gradient(45deg,#af8ec9,#8e00f9,#320652,#1a022b);
+    --roxo-padrao: #8e00f9;
+    --roxo-hover: #320652;
+    
+}
+
+@font-face {
+    font-family: old;
+    src: url("../fonts/old.ttf");
+}

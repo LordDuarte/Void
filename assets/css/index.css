@@ -1,0 +1,111 @@
+body{
+    background-image: url(../picture/void-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: old;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    width: 300px;
+    top: 0;
+    animation: tremendo 1s infinite alternate;
+    position: absolute;
+}
+
+@keyframes tremendo{
+    0%{
+        transform: scale(1.0);
+        transform: rotate(-7deg);
+    }
+    100%{
+        transform: scale(1.0);
+        transform: rotate(5deg);
+    }
+}
+section{
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.texto{
+   font-size: var(--mobile-h);
+   text-decoration: none;
+   background-image: var(--botao-principal);
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+   background-size: 400%;
+   animation: glowing 20s linear infinite;
+}
+
+.texto:hover{
+    animation: scale 2s infinite alternate;
+    background-size: 200%;
+}
+
+
+.texto:active{
+    animation: scale 2s infinite alternate;
+    background-size: 200%;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 200% 0; }
+    100% { background-position: 0 0; }
+}
+
+@keyframes scale{
+    0%{
+        font-size: var(--mobile-h);
+        background-position: 0 0; 
+    }
+    50%{
+        background-position: 200% 0;
+    }
+    100%{
+        font-size: 30px;
+        background-position: 0 0;
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+footer a{
+    font-size: var(--mobile-p);
+    text-decoration: none;
+    color: var(--roxo-padrao);
+    margin-inline: 20px;
+}
+
+footer a:hover{
+    color: var(--roxo-hover);
+}
+
+
+@media screen and (min-width:920px){
+    body{
+        background-image: url(../picture/void.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
